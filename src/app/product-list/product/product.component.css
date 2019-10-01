@@ -1,0 +1,28 @@
+.product{
+    text-align: center;
+    display: inline-block;
+    border: 3px solid gainsboro;
+    padding: 35px;
+    transition: border .3s;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: 400px;
+}
+
+.product:hover{
+    border: 3px solid darkturquoise;
+}
+
+app-image-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px dashed gainsboro;
+    padding: 10px;
+    transition: border .3s;
+}
+
+app-image-description:hover{
+    border-color: greenyellow;
+}

@@ -1,0 +1,19 @@
+.product{
+    display: inline-block;
+}
+.productList{
+    border: 3px dashed gainsboro;
+    display: inline-block;
+    margin-top: 32px;
+    padding: 32px;
+    transition: border .3s;
+}
+
+.productList:hover{
+    border: 3px dashed orange;
+}
+
+app-product-list{
+    display: block;
+}
+

@@ -1,0 +1,10 @@
+
+<div class="productList">
+        <div class="product" *ngFor="let product of productList">
+            <app-product 
+        [inputTitle]="product.title" 
+        [inputDescription]="product.description"
+        [inputImagePath]="product.imagePath">
+        </app-product>
+        </div>
+</div>
