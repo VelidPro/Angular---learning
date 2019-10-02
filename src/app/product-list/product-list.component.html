@@ -4,7 +4,11 @@
             <app-product 
         [inputTitle]="product.title" 
         [inputDescription]="product.description"
-        [inputImagePath]="product.imagePath">
+        [inputImagePath]="product.imagePath"
+        [inputPrice]="product.price"
+        (izvoz)="onIzvoz($event)"
+        >
         </app-product>
         </div>
+        <h3>Sum: {{sumPrice}}</h3>
 </div>
