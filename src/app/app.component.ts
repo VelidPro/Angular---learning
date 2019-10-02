@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'App';
+  sum : number;
+
+  constructor() {
+  }
+
+  onSum(message : number)
+  {
+    this.sum += message;
+  }
 }
