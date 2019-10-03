@@ -2,7 +2,6 @@
     <h2>{{title}}</h2>
     <p>{{description}}</p>
     <p>{{price}}</p>
-    <app-image-description [inputImagePath]="imagePath">
-
-    </app-image-description>
+    <app-image-description [inputImagePath]="imagePath"></app-image-description>
+    <button class="btn btn-primary" [routerLink]="['/product-details', title]">Details</button>
 </div>

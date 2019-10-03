@@ -9,32 +9,32 @@ export class ProductService{
     getProducts(): IProduct[]{
         return [
         {
-            "title": "Product 1",
+            "title": "SultanCola",
             "description": "This is a description",
             "imagePath": "https://via.placeholder.com/200",
             "price": 200
         } ,
         {
-            "title": "A",
+            "title": "Pepsi",
             "description": "A",
             "imagePath": "https://via.placeholder.com/200",
             "price": 10
         } ,
 
         {
-            "title": "Product 2",
+            "title": "CocaCola",
             "description": "This is a description",
             "imagePath": "https://via.placeholder.com/200",
             "price": 35
         } ,
         {
-            "title": "Product 3",
+            "title": "Cappy",
             "description": "This is a description",
             "imagePath": "https://via.placeholder.com/200",
             "price": 123
         } ,
         {
-            "title": "Product 5",
+            "title": "DvojniC",
             "description": "This is a description",
             "imagePath": "https://via.placeholder.com/200",
             "price": 45

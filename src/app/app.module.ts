@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { DummyComponent } from './dummy/dummy.component';
 import {RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { HomeComponent } from './home/home.component';
     ImageDescriptionComponent,
     HeaderComponent,
     DummyComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailsComponent
   ],
   imports: [
     RouterModule.forRoot([
       {path: '', redirectTo:'/home', pathMatch: 'full'},
+      {path: 'product-details/:title', component: ProductDetailsComponent},
       {path: 'home', component: HomeComponent},
       {path: 'dummy', component: DummyComponent},
       {path: 'product-list', component: ProductListComponent},
