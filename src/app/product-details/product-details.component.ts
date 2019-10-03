@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router"
+import {ActivatedRoute, Router} from "@angular/router"
 import { IProduct } from '../shared/IProduct';
 import { ProductService } from '../shared/ProductService';
 
@@ -13,7 +13,7 @@ export class ProductDetailsComponent implements OnInit {
 
 
   private readonly _productService;
-  constructor(private route: ActivatedRoute, productService: ProductService) {
+  constructor(private route: ActivatedRoute, productService: ProductService, private router: Router) {
     this._productService = productService;
    }
 
@@ -22,6 +22,10 @@ export class ProductDetailsComponent implements OnInit {
     
     this.product = this._productService.getProducts().find(product => product.title === title);
     console.log(this.product);
+  }
+
+  onBack():void{
+    this.router.navigate(['/product-list']);
   }
 
 }
