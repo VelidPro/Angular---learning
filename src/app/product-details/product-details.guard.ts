@@ -19,7 +19,7 @@ export class ProductDetailsGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       let title = next.url[1].path;
-      console.log(title);
+      
       if(this._productService.getProducts().find(product => product.title === title) == undefined)
       {
         this.router.navigate(['/product-details']);
