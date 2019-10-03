@@ -8,6 +8,7 @@ import { ImageDescriptionComponent } from './product-list/product/image-descript
 import { HeaderComponent } from './header/header.component';
 import { DummyComponent } from './dummy/dummy.component';
 import {RouterModule} from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,16 @@ import {RouterModule} from '@angular/router';
     ProductListComponent,
     ImageDescriptionComponent,
     HeaderComponent,
-    DummyComponent
+    DummyComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot([
+      {path: '', redirectTo:'/home', pathMatch: 'full'},
+      {path: 'home', component: HomeComponent},
       {path: 'dummy', component: DummyComponent},
       {path: 'product-list', component: ProductListComponent},
-      {path: 'welcome', redirectTo: '/welcome'}
+      {path: '**', component: ProductListComponent}
     ]),
     BrowserModule
   ],
