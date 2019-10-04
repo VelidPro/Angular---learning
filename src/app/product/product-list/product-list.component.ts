@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {IProduct} from "../shared/IProduct"
+import {IProduct} from "../../shared/IProduct"
 import { stringify } from 'querystring';
-import { ProductService } from '../shared/ProductService';
+import { ProductService } from '../../shared/ProductService';
  
 @Component({
   selector: 'app-product-list',
